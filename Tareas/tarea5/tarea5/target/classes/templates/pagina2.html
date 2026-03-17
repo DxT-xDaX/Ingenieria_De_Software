@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Juguetes</title>
+</head>
+<body>
+<h1>Juguetes</h1>
+
+<div class="card" style="width: 18rem;">
+    <img th:src="${ju.foto}" alt="Imagen" class="card-img-top">
+    <div class="card-body">
+        <h5 class="card-title">Hueso</h5>
+        <p class="card-text" th:text="${ju.nombre}">Hola k tal</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+    </div>
+
+</div>
+</body>
+</html>
